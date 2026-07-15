@@ -1,0 +1,12 @@
+{
+  "name": "django-clean",
+  "exportedAt": "2026-07-15T00:00:00.000Z",
+  "patterns": {
+    "formatting/indent-space4.md": "---\nname: indent-space4\ndescription: \"4-space indent\"\nmetadata:\n  type: preference\n  strength: 0.90\n  sources: [myapp/views.py]\n  lastUpdated: 2026-07-14\n---\n\n# 4-Space Indent\n\n4-space indent.\n\n**How to apply:** PEP 8 compliant — 4 spaces, no tabs.\n",
+    "formatting/single-quotes.md": "---\nname: single-quotes\ndescription: \"Single quotes dominate\"\nmetadata:\n  type: preference\n  strength: 0.70\n  sources: [myapp/models.py]\n  lastUpdated: 2026-07-10\n---\n\n# Single Quotes\n\nSingle quotes dominate.\n\n**How to apply:** Use single quotes for strings. Double quotes only when the string contains a single quote or for docstrings.\n",
+    "naming/snake-case-vars.md": "---\nname: snake-case-vars\ndescription: \"52/55 vars snake_case\"\nmetadata:\n  type: preference\n  strength: 0.95\n  sources: [myapp/utils.py]\n  lastUpdated: 2026-07-14\n---\n\n# Snake Case Variables\n\n52/55 vars snake_case.\n\n**How to apply:** PEP 8 compliant — `user_name` not `userName`.\n",
+    "pattern/early-returns.md": "---\nname: early-returns\ndescription: \"4 early return patterns\"\nmetadata:\n  type: preference\n  strength: 0.60\n  sources: [myapp/services.py]\n  lastUpdated: 2026-07-12\n---\n\n# Early Returns\n\n4 early return patterns.\n\n**How to apply:** Guard clauses at the top of functions. Return early for edge cases, then main logic without nesting.\n",
+    "pattern/type-annotations.md": "---\nname: type-annotations\ndescription: \"Functions have return type annotations\"\nmetadata:\n  type: preference\n  strength: 0.75\n  sources: [myapp/serializers.py]\n  lastUpdated: 2026-07-11\n---\n\n# Type Annotations\n\nFunctions have return type annotations.\n\n**How to apply:** Always annotate function signatures with types. `def get_user(id: int) -> User | None:` not `def get_user(id)`.\n"
+  },
+  "count": 5
+}

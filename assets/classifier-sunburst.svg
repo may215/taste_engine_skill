@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+  <defs>
+    <linearGradient id="c1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e94560"/><stop offset="100%" stop-color="#ff6b8a"/></linearGradient>
+    <linearGradient id="c2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f3460"/><stop offset="100%" stop-color="#4a7db5"/></linearGradient>
+    <linearGradient id="c3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#16213e"/><stop offset="100%" stop-color="#2a3f6a"/></linearGradient>
+  </defs>
+  <rect width="500" height="500" rx="16" fill="#0f0f1a"/>
+  <!-- Center -->
+  <circle cx="250" cy="250" r="50" fill="#e94560" opacity="0.15" stroke="#e94560" stroke-width="2"/>
+  <text x="250" y="245" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="#fff">TASTE</text>
+  <text x="250" y="260" text-anchor="middle" font-family="system-ui" font-size="10" fill="#888">ENGINE</text>
+  <!-- Ring 1: Categories -->
+  <g opacity="0.9">
+    <!-- Formatting (10) -->
+    <path d="M250 200 A50 50 0 0 1 300 250" fill="none" stroke="#e94560" stroke-width="2.5" transform="rotate(0 250 250)"/>
+    <path d="M250 200 A50 50 0 0 1 300 250" fill="none" stroke="#e94560" stroke-width="2.5" transform="rotate(36 250 250)"/>
+    <path d="M250 200 A50 50 0 0 1 300 250" fill="none" stroke="#e94560" stroke-width="2.5" transform="rotate(72 250 250)"/>
+    <path d="M250 200 A50 50 0 0 1 300 250" fill="none" stroke="#e94560" stroke-width="2.5" transform="rotate(108 250 250)"/>
+    <path d="M250 200 A50 50 0 0 1 300 250" fill="none" stroke="#e94560" stroke-width="2.5" transform="rotate(144 250 250)"/>
+    <path d="M250 200 A50 50 0 0 1 300 250" fill="none" stroke="#e94560" stroke-width="2.5" transform="rotate(180 250 250)"/>
+    <path d="M250 200 A50 50 0 0 1 300 250" fill="none" stroke="#e94560" stroke-width="2.5" transform="rotate(216 250 250)"/>
+    <path d="M250 200 A50 50 0 0 1 300 250" fill="none" stroke="#e94560" stroke-width="2.5" transform="rotate(252 250 250)"/>
+    <path d="M250 200 A50 50 0 0 1 300 250" fill="none" stroke="#e94560" stroke-width="2.5" transform="rotate(288 250 250)"/>
+    <path d="M250 200 A50 50 0 0 1 300 250" fill="none" stroke="#e94560" stroke-width="2.5" transform="rotate(324 250 250)"/>
+  </g>
+  <!-- Ring 2: Naming (8) -->
+  <g opacity="0.8">
+    <path d="M250 170 A80 80 0 0 1 330 250" fill="none" stroke="#4a7db5" stroke-width="2" transform="rotate(0 250 250)"/>
+    <path d="M250 170 A80 80 0 0 1 330 250" fill="none" stroke="#4a7db5" stroke-width="2" transform="rotate(45 250 250)"/>
+    <path d="M250 170 A80 80 0 0 1 330 250" fill="none" stroke="#4a7db5" stroke-width="2" transform="rotate(90 250 250)"/>
+    <path d="M250 170 A80 80 0 0 1 330 250" fill="none" stroke="#4a7db5" stroke-width="2" transform="rotate(135 250 250)"/>
+    <path d="M250 170 A80 80 0 0 1 330 250" fill="none" stroke="#4a7db5" stroke-width="2" transform="rotate(180 250 250)"/>
+    <path d="M250 170 A80 80 0 0 1 330 250" fill="none" stroke="#4a7db5" stroke-width="2" transform="rotate(225 250 250)"/>
+    <path d="M250 170 A80 80 0 0 1 330 250" fill="none" stroke="#4a7db5" stroke-width="2" transform="rotate(270 250 250)"/>
+    <path d="M250 170 A80 80 0 0 1 330 250" fill="none" stroke="#4a7db5" stroke-width="2" transform="rotate(315 250 250)"/>
+  </g>
+  <!-- Ring 3: TypeScript (8) -->
+  <g opacity="0.7">
+    <path d="M250 140 A110 110 0 0 1 360 250" fill="none" stroke="#2a3f6a" stroke-width="2" transform="rotate(0 250 250)"/>
+    <path d="M250 140 A110 110 0 0 1 360 250" fill="none" stroke="#2a3f6a" stroke-width="2" transform="rotate(45 250 250)"/>
+    <path d="M250 140 A110 110 0 0 1 360 250" fill="none" stroke="#2a3f6a" stroke-width="2" transform="rotate(90 250 250)"/>
+    <path d="M250 140 A110 110 0 0 1 360 250" fill="none" stroke="#2a3f6a" stroke-width="2" transform="rotate(135 250 250)"/>
+    <path d="M250 140 A110 110 0 0 1 360 250" fill="none" stroke="#2a3f6a" stroke-width="2" transform="rotate(180 250 250)"/>
+    <path d="M250 140 A110 110 0 0 1 360 250" fill="none" stroke="#2a3f6a" stroke-width="2" transform="rotate(225 250 250)"/>
+    <path d="M250 140 A110 110 0 0 1 360 250" fill="none" stroke="#2a3f6a" stroke-width="2" transform="rotate(270 250 250)"/>
+    <path d="M250 140 A110 110 0 0 1 360 250" fill="none" stroke="#2a3f6a" stroke-width="2" transform="rotate(315 250 250)"/>
+  </g>
+  <!-- Outer label arcs -->
+  <text x="250" y="118" text-anchor="middle" font-family="system-ui" font-size="11" fill="#e94560">FORMATTING (10)</text>
+  <text x="250" y="402" text-anchor="middle" font-family="system-ui" font-size="11" fill="#4a7db5">NAMING (8)</text>
+  <text x="130" y="250" text-anchor="middle" font-family="system-ui" font-size="11" fill="#2a3f6a">TYPESCRIPT (8)</text>
+  <!-- Outer ring counts -->
+  <circle cx="370" cy="250" r="55" fill="none" stroke="#2a3f6a" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 4"/>
+  <text x="370" y="248" text-anchor="middle" font-family="system-ui" font-size="9" fill="#555">+6 more</text>
+  <text x="370" y="260" text-anchor="middle" font-family="system-ui" font-size="8" fill="#444">categories</text>
+</svg>

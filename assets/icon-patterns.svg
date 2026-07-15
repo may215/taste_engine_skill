@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="20" fill="#1a1a2e"/>
+  <path d="M36 50 L84 50" stroke="#e94560" stroke-width="4" stroke-linecap="round"/>
+  <path d="M36 60 L72 60" stroke="#4a7db5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M36 70 L60 70" stroke="#e94560" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="30" cy="50" r="3" fill="#e94560"/>
+  <circle cx="30" cy="60" r="3" fill="#4a7db5"/>
+  <circle cx="30" cy="70" r="3" fill="#e94560"/>
+  <text x="60" y="100" text-anchor="middle" font-family="system-ui" font-size="10" fill="#888">PATTERNS</text>
+</svg>

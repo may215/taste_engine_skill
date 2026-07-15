@@ -1,0 +1,58 @@
+{
+  "name": "@claude-code/taste-engine",
+  "version": "2.0.0",
+  "description": "A continuous reinforcement learning engine for Claude Code that learns your coding patterns from every accepted or rejected edit and injects them as context in future sessions.",
+  "keywords": [
+    "claude-code",
+    "taste-engine",
+    "reinforcement-learning",
+    "coding-patterns",
+    "claude",
+    "anthropic",
+    "developer-experience",
+    "code-quality",
+    "learning",
+    "preferences"
+  ],
+  "homepage": "https://github.com/claude-code/taste-engine#readme",
+  "bugs": {
+    "url": "https://github.com/claude-code/taste-engine/issues"
+  },
+  "license": "MIT",
+  "author": "Claude Code Taste Engine Contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claude-code/taste-engine.git"
+  },
+  "main": "src/taste-commands.js",
+  "files": [
+    "src/",
+    "adapters/shared/",
+    "adapters/claude-code/",
+    "SKILL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "taste-extract": "src/taste-extract.js",
+    "taste-commands": "src/taste-commands.js",
+    "taste-inject": "src/taste-injector.js",
+    "taste-share": "src/taste-share.js",
+    "taste-watch": "src/taste-watch.js",
+    "taste-init": "src/taste-init.js"
+  },
+  "scripts": {
+    "taste:init": "node src/taste-init.js",
+    "taste:status": "node src/taste-commands.js status",
+    "taste:list": "node src/taste-commands.js list",
+    "taste:decay": "node src/taste-extract.js --decay",
+    "taste:compound": "node src/taste-extract.js --compound",
+    "test": "node src/taste-init.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

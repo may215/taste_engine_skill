@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="100" viewBox="0 0 800 100" fill="none">
+  <rect width="800" height="100" rx="12" fill="#0f0f1a"/>
+  <g transform="translate(40, 20)">
+    <rect x="0" y="0" width="80" height="28" rx="6" fill="#e94560" opacity="0.15" stroke="#e94560" stroke-width="1"/>
+    <text x="40" y="19" text-anchor="middle" font-family="system-ui" font-size="9" font-weight="600" fill="#e94560">CLAUDE CODE</text>
+  </g>
+  <g transform="translate(135, 20)">
+    <rect x="0" y="0" width="65" height="28" rx="6" fill="#4a7db5" opacity="0.15" stroke="#4a7db5" stroke-width="1"/>
+    <text x="33" y="19" text-anchor="middle" font-family="system-ui" font-size="9" font-weight="600" fill="#4a7db5">CURSOR</text>
+  </g>
+  <g transform="translate(215, 20)">
+    <rect x="0" y="0" width="80" height="28" rx="6" fill="#e94560" opacity="0.15" stroke="#e94560" stroke-width="1"/>
+    <text x="40" y="19" text-anchor="middle" font-family="system-ui" font-size="9" font-weight="600" fill="#e94560">GITHUB COPILOT</text>
+  </g>
+  <g transform="translate(310, 20)">
+    <rect x="0" y="0" width="95" height="28" rx="6" fill="#4a7db5" opacity="0.15" stroke="#4a7db5" stroke-width="1"/>
+    <text x="48" y="19" text-anchor="middle" font-family="system-ui" font-size="9" font-weight="600" fill="#4a7db5">CONTINUE.DEV</text>
+  </g>
+  <g transform="translate(420, 20)">
+    <rect x="0" y="0" width="75" height="28" rx="6" fill="#e94560" opacity="0.15" stroke="#e94560" stroke-width="1"/>
+    <text x="38" y="19" text-anchor="middle" font-family="system-ui" font-size="9" font-weight="600" fill="#e94560">WINDSURF</text>
+  </g>
+  <g transform="translate(510, 20)">
+    <rect x="0" y="0" width="55" height="28" rx="6" fill="#4a7db5" opacity="0.15" stroke="#4a7db5" stroke-width="1"/>
+    <text x="28" y="19" text-anchor="middle" font-family="system-ui" font-size="9" font-weight="600" fill="#4a7db5">CLINE</text>
+  </g>
+  <g transform="translate(580, 20)">
+    <rect x="0" y="0" width="55" height="28" rx="6" fill="#e94560" opacity="0.15" stroke="#e94560" stroke-width="1"/>
+    <text x="28" y="19" text-anchor="middle" font-family="system-ui" font-size="9" font-weight="600" fill="#e94560">AIDER</text>
+  </g>
+  <g transform="translate(650, 20)">
+    <rect x="0" y="0" width="85" height="28" rx="6" fill="#4a7db5" opacity="0.15" stroke="#4a7db5" stroke-width="1"/>
+    <text x="43" y="19" text-anchor="middle" font-family="system-ui" font-size="9" font-weight="600" fill="#4a7db5">VS CODE</text>
+  </g>
+  <g transform="translate(40, 62)">
+    <rect x="0" y="0" width="90" height="22" rx="5" fill="#16213e" stroke="#333" stroke-width="0.5"/>
+    <text x="8" y="15" font-size="10" fill="#888">40</text>
+    <text x="22" y="15" font-size="10" fill="#555">classifiers</text>
+  </g>
+  <g transform="translate(145, 62)">
+    <rect x="0" y="0" width="80" height="22" rx="5" fill="#16213e" stroke="#333" stroke-width="0.5"/>
+    <text x="8" y="15" font-size="10" fill="#888">8</text>
+    <text x="22" y="15" font-size="10" fill="#555">platforms</text>
+  </g>
+  <g transform="translate(240, 62)">
+    <rect x="0" y="0" width="100" height="22" rx="5" fill="#16213e" stroke="#333" stroke-width="0.5"/>
+    <text x="8" y="15" font-size="10" fill="#888">0</text>
+    <text x="22" y="15" font-size="10" fill="#555">external deps</text>
+  </g>
+  <g transform="translate(355, 62)">
+    <rect x="0" y="0" width="70" height="22" rx="5" fill="#16213e" stroke="#333" stroke-width="0.5"/>
+    <text x="8" y="15" font-size="10" fill="#888">MIT</text>
+    <text x="30" y="15" font-size="10" fill="#555">license</text>
+  </g>
+  <g transform="translate(440, 62)">
+    <rect x="0" y="0" width="85" height="22" rx="5" fill="#16213e" stroke="#333" stroke-width="0.5"/>
+    <text x="8" y="15" font-size="10" fill="#888">~3ms</text>
+    <text x="40" y="15" font-size="10" fill="#555">per edit</text>
+  </g>
+  <g transform="translate(540, 62)">
+    <circle cx="12" cy="12" r="6" fill="#4a7db5" opacity="0.3"/>
+    <circle cx="12" cy="12" r="3" fill="#4a7db5"/>
+    <text x="24" y="15" font-size="10" fill="#888">Zero telemetry</text>
+  </g>
+</svg>

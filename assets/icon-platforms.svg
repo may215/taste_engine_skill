@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="20" fill="#1a1a2e"/>
+  <rect x="25" y="30" width="70" height="14" rx="4" fill="#0f3460" stroke="#e94560" stroke-width="1.5"/>
+  <rect x="25" y="50" width="70" height="14" rx="4" fill="#0f3460" stroke="#4a7db5" stroke-width="1.5"/>
+  <rect x="25" y="70" width="70" height="14" rx="4" fill="#0f3460" stroke="#e94560" stroke-width="1.5"/>
+  <text x="60" y="40" text-anchor="middle" font-family="system-ui" font-size="8" fill="#fff">CLAUDE CODE</text>
+  <text x="60" y="60" text-anchor="middle" font-family="system-ui" font-size="8" fill="#fff">CURSOR</text>
+  <text x="60" y="80" text-anchor="middle" font-family="system-ui" font-size="8" fill="#fff">COPILOT</text>
+  <text x="60" y="105" text-anchor="middle" font-family="system-ui" font-size="9" fill="#666">+5 more</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="20" fill="#1a1a2e"/>
+  <path d="M60 25 L85 35 L85 55 Q85 80 60 95 Q35 80 35 55 L35 35 Z" fill="none" stroke="#4a7db5" stroke-width="2.5"/>
+  <path d="M48 60 L57 69 L72 54" stroke="#4a7db5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="60" y="110" text-anchor="middle" font-family="system-ui" font-size="9" fill="#888">PRIVACY</text>
+</svg>

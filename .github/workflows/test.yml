@@ -1,0 +1,37 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Setup Claude dir
+        run: mkdir -p ~/.claude
+      - name: Check JS parses
+        run: |
+          for f in src/*.js adapters/*/install.js adapters/*/hook.js adapters/cline/mcp-server.js; do
+            [ -f "$f" ] && node -c "$f" && echo "OK $f" || echo "FAIL $f"
+          done
+      - name: Check adapters present
+        run: |
+          for p in claude-code cursor copilot continue windsurf cline aider vscode; do
+            [ -f "adapters/$p/install.js" ] && echo "OK $p" || { echo "MISSING $p"; exit 1; }
+          done
+      - name: Test capture
+        run: |
+          echo "const x = 1;" > /tmp/test.js
+          node adapters/shared/taste-platform-capture.js /tmp/test.js
+      - name: Check platforms in README
+        run: |
+          for p in "Claude Code" Cursor Copilot Continue.dev Windsurf Cline Aider VSCode; do
+            grep -q "$p" README.md && echo "OK $p" || { echo "MISSING $p"; exit 1; }
+          done

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="20" fill="#1a1a2e"/>
+  <circle cx="60" cy="60" r="20" fill="none" stroke="#e94560" stroke-width="2.5"/>
+  <path d="M60 40 A20 20 0 0 1 80 60" stroke="#ff6b8a" stroke-width="2" fill="none"/>
+  <path d="M80 60 L75 55 M80 60 L75 65" stroke="#ff6b8a" stroke-width="1.5"/>
+  <circle cx="60" cy="60" r="4" fill="#e94560"/>
+  <text x="60" y="100" text-anchor="middle" font-family="system-ui" font-size="9" fill="#888">RL LOOP</text>
+</svg>
