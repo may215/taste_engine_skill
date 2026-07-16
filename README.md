@@ -126,6 +126,61 @@ graph LR
 
 ---
 
+## Operational Principles
+
+Taste Engine isn't just a style preference list. It comes with a **behavioral operating model** — 6 principles that govern *how* the AI applies your preferences, adapted from the Karpathy guidelines for LLM coding.
+
+### 1. Think Then Generate
+
+Before writing code, the AI checks understanding against your taste profile:
+
+> "Profile says `arrow-functions` at 1.00, but this is recursive — using named function with override note."
+> "Profile has `zustand-over-redux` at 0.80. Task says Redux. Instruction wins. Proceeding with Redux."
+
+Taste profile is guidance, not dogma. When overridden, the AI says why.
+
+### 2. Strength-Driven Pattern Application
+
+Not all preferences are equal. The AI applies them based on strength:
+
+| Strength | How the AI applies it |
+|----------|-----------------------|
+| **0.80–1.00** | Always follows. Strong, consistent preference. |
+| **0.50–0.79** | Follows by default. Overrides only when clarity demands it. |
+| **0.20–0.49** | Weak signal. Prefers it but doesn't fight the existing code. |
+| **Not present** | Falls back to the file's existing conventions. |
+
+### 3. Simplicity First
+
+The AI generates minimum viable code that matches your taste. No speculative abstractions, no unrequested flexibility, no error handling for impossible scenarios. Self-check: "Would a senior engineer call this overcomplicated?"
+
+### 4. Surgical Changes
+
+When editing existing files, the AI touches only what the task requires. It matches the existing file style even if it conflicts with your taste profile (consistency > preference). Unrelated dead code is noted, not removed. Every changed line traces directly to the request.
+
+### 5. Goal-Driven Execution with Verification
+
+Tasks are broken into verifiable checkpoints:
+
+- **Add a function** → define, test with sample input, confirm output
+- **Fix a bug** → reproduce → diagnose → fix → confirm closed
+- **Refactor** → tests pass before → refactor → tests pass after
+
+When a checkpoint fails, the AI loops — it doesn't continue with broken state.
+
+### 6. Override Protocol
+
+When taste profile conflicts with the task, the override hierarchy is:
+
+1. **Explicit user instruction** — "Use Redux here" overrides `zustand-over-redux`
+2. **Project convention** — File uses `function` declarations → match that
+3. **Task necessity** — Feature genuinely requires different pattern → explain why
+4. **Taste profile** — Default when none of the above applies
+
+Every override is logged with a brief note so you know why it happened.
+
+---
+
 ## How It's Different
 
 ### From a blank session:
