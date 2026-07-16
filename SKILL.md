@@ -8,6 +8,84 @@ trigger: /taste
 
 Learns your coding patterns by observing every Write/Edit. Stores them as structured memory files, injects into session context, supports push/pull sharing.
 
+## Operational Principles
+
+These rules govern how code is generated when following a taste profile. They prevent the most common LLM coding mistakes — overcomplication, speculative abstractions, and silent assumptions — while respecting learned preferences.
+
+### 1. Think Then Generate
+
+Before writing code, quickly check your understanding:
+
+- **State the assumption** — "Using Zustand because taste profile shows zustand-over-redux at 0.80"
+- **Surface tradeoffs** — "Arrow functions are preferred (profile: 1.00), but this is a recursive utility — a named function may be clearer. Going with arrow per profile unless it causes issues."
+- **When in doubt, ask** — If the task has multiple valid interpretations, present all of them rather than silently choosing one.
+
+The taste profile is guidance, not dogma. If a pattern conflicts with the specific task (e.g., profile says arrow functions but you need recursion), explain the override.
+
+### 2. Generate Taste-Aligned Code
+
+The taste profile in `active-taste.md` (or the platform equivalent) lists the user's top preferences. Follow them:
+
+- If `arrow-functions` is at 0.90: use `const fn = () => {}`, not `function fn() {}`
+- If `imports-grouped` is at 0.70: separate imports into type / external / internal groups
+- If `no-any-ts` is at 0.80: define proper types instead of using `any`
+
+**Strength-driven application:**
+
+| Profile strength | How to apply |
+|----------------|--------------|
+| 0.80–1.00 | Always follow. This is a strong, consistent preference. |
+| 0.50–0.79 | Follow by default. Override if the alternative is significantly clearer. |
+| 0.20–0.49 | Weak signal. Prefer it but don't fight the codebase. |
+| Not present | Use conventions from the surrounding code. |
+
+### 3. Simplicity First
+
+The taste profile says *what* to generate, but *how much* to generate is governed by simplicity:
+
+- Generate the minimum code that solves the task
+- No speculative abstractions — a one-off pattern doesn't need a utility function
+- No speculative flexibility — don't add parameters "for future use"
+- No error handling for scenarios that can't happen
+- If a block is 4x longer than needed, rewrite it shorter
+- Self-check: would a senior engineer call this overcomplicated?
+
+### 4. Surgical Changes
+
+When editing existing code:
+
+- Touch only what the task requires
+- Match the existing file's style, even if it conflicts with the taste profile (consistency > preference)
+- Do not refactor unrelated code, reformat unmodified blocks, or "fix" comments you weren't asked to
+- If your edit creates an orphan (unused import, dead variable), clean it — but only if you created it
+- Note pre-existing dead code silently; don't remove it unless asked
+
+**Guiding test:** every changed line should trace directly to the request. If you can't explain why a line changed, revert it.
+
+### 5. Goal-Driven Execution with Verification
+
+Convert tasks into checkpoints that can be verified:
+
+| Task type | Approach |
+|-----------|----------|
+| Add a function | "Define function, write a quick usage example, confirm it produces expected output" |
+| Fix a bug | "Reproduce the bug first, understand root cause, apply fix, confirm fix" |
+| Refactor | "Tests pass before → refactor → tests pass after" |
+| New feature | "Break into sub-tasks, verify each independently, combine" |
+
+For multi-step work, state a brief plan with checkpoints before starting. When a checkpoint fails, loop — don't plow forward with broken state.
+
+### 6. Taste Profile Override Protocol
+
+Sometimes the profile conflicts with the task. Here's the override hierarchy:
+
+1. **Explicit user instruction** — "Use Redux here" overrides `zustand-over-redux` at any strength
+2. **Project convention** — If the file you're editing uses `function` declarations, match that even if profile says arrow functions
+3. **Task necessity** — If the approach genuinely requires a different pattern, explain why and proceed
+4. **Taste profile** — Default when none of the above apply
+
+When overriding, add a brief note: "Overriding `no-any-ts` because the external API type is unavailable."
+
 ## Architecture
 
 ```
