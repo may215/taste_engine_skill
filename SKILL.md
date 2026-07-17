@@ -117,6 +117,10 @@ When overriding, add a brief note: "Overriding `no-any-ts` because the external 
 | `/taste push` | Export profile as portable JSON |
 | `/taste pull <src>` | Import profile from file/URL |
 | `/taste watch [dir]` | Start file watcher for manual edits |
+| `/taste news` | Find relevant tech news from your taste profile |
+| `/taste news --category <cat>` | News filtered by pattern category |
+| `/taste news --top <N>` | Top N articles (default 5) |
+| `/taste news --search "<query>"` | Search specific topic instead of profile |
 
 ## 30+ Classifiers
 

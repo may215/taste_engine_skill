@@ -273,6 +273,19 @@ function main() {
         { stdio: 'inherit' }
       );
       break;
+    case 'news':
+    case 'feed':
+      const newsArgs = ['node', [TASTE_DIR + '/scripts/taste-news.js']];
+      // Pass through --category, --top, --search to news script
+      for (const flag of ['--category', '--top', '--search']) {
+        const idx = args.indexOf(flag);
+        if (idx >= 0) {
+          newsArgs.push(flag);
+          if (args[idx + 1]) newsArgs.push(args[idx + 1]);
+        }
+      }
+      require('child_process').spawnSync(...newsArgs, { stdio: 'inherit' });
+      break;
     default:
       console.log('Unknown command: ' + cmd);
       process.exit(1);

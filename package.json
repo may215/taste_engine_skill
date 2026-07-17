@@ -39,7 +39,8 @@
     "taste-inject": "src/taste-injector.js",
     "taste-share": "src/taste-share.js",
     "taste-watch": "src/taste-watch.js",
-    "taste-init": "src/taste-init.js"
+    "taste-init": "src/taste-init.js",
+    "taste-news": "src/taste-news.js"
   },
   "scripts": {
     "taste:init": "node src/taste-init.js",
